@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">1. What is the difference between Local Storage and Session Storage ?</h5>
+                <p class="card-text">
+                    <strong>localStorage:</strong>
+                    <li>data stored with localStorage has no expiration date, and gets cleared only through JavaScript,
+                        or clearing the Browser
+                        cache / Locally Stored Data.</li>
+                    <li>The storage limit is the maximum amongst the three.</li>
+                    <li>The data stored in localStorage persists until explicitly deleted. Changes made are saved and
+                        available for all current
+                        and future visits to the site.</li>
+                    <li>It works on the same-origin policy. So, data stored will only be available on the same origin.
+                    </li> <br>
+
+                    <strong>sessionStorage:</strong>
+                    <li>It stores data only for a session, meaning that the data is stored until the browser (or tab) is
+                        closed.</li>
+                    <li>Data is never transferred to the server.</li>
+                    <li>Changes are only available per window (or tab in browsers like Chrome and Firefox). Changes made
+                        are saved and available
+                        for the current page, as well as future visits to the site on the same window. Once the window
+                        is closed, the storage is
+                        deleted.</li>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">2. What is the difference between Global scope and Block scope ?</h5>
+                <p class="card-text">
+                    <strong>Global Scope :</strong>
+                    Variables defined outside any function, block, or module scope have global scope. Variables in
+                    global scope can be
+                    accessed from everywhere in the application.
+
+                    When a module system is enabled it’s harder to make global variables, but one can still do it. By
+                    defining a variable in
+                    HTML, outside any function, a global variable can be created.
+                    <br>
+                    <strong>Block Scope :</strong>
+                    Block scope means that parameters and variables defined in a function are visible everywhere within
+                    the function, but
+                    are not visible outside of the function.
+                    Block scope is defined with curly braces. It is separated by { and }.
+                    Variables declared with let and const can have block scope. They can only be accessed in the block
+                    in which they are
+                    defined.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content.
+                    This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
