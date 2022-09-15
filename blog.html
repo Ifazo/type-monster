@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
@@ -12,7 +12,7 @@
 <body>
 
     <section class="container">
-        <div class="card mb-3">
+        <div class="card m-2">
             <div class="card-body">
                 <h5 class="card-title">1. What is the difference between Local Storage and Session Storage ?</h5>
                 <p class="card-text">
@@ -39,7 +39,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
+        <div class="card m-2">
             <div class="card-body">
                 <h5 class="card-title">2. What is the difference between Global scope and Block scope ?</h5>
                 <p class="card-text">
@@ -48,7 +48,7 @@
                     global scope can be
                     accessed from everywhere in the application.
 
-                    When a module system is enabled it’s harder to make global variables, but one can still do it. By
+                    When a module system is enabled it's harder to make global variables, but one can still do it. By
                     defining a variable in
                     HTML, outside any function, a global variable can be created.
                     <br>
@@ -63,13 +63,13 @@
                 </p>
             </div>
         </div>
-        <div class="card">
+        <div class="card m-2">
             <div class="card-body">
                 <h5 class="card-title">3. How Event loop works in JavaScript ?</h5>
                 <p class="card-text">
                     1. The call to the main function is first pushed into the stack (as a frame). Then the browser
                     pushes the first statement
-                    in the main function into the stack which is console.log(‘A’). This statement is executed and upon
+                    in the main function into the stack which is console.log('A'). This statement is executed and upon
                     completion that frame
                     is popped out. Alphabet A is displayed in the console. <br>
                     2. The next statement (setTimeout() with callback exec() and 0ms wait time) is pushed into the call
@@ -77,7 +77,7 @@
                     starts. setTimeout function uses a Browser API to delay a callback to the provided function. The
                     frame (with setTimeout) <br>
                     is then popped out once the handover to browser is complete (for the timer). <br>
-                    3. console.log(‘C’) is pushed to the stack while the timer runs in the browser for the callback to
+                    3. console.log('C') is pushed to the stack while the timer runs in the browser for the callback to
                     the exec() function. In
                     this particular case, as the delay provided was 0ms, the callback will be added to the message queue
                     as soon as the
@@ -95,7 +95,7 @@
                 <img class="img-fluid" src="./event-loop.png" alt="">
             </div>
         </div>
-        <div class="card">
+        <div class="card m-2">
             <div class="card-body">
                 <h5 class="card-title">4. How we can get Undifined in JavaScript ?</h5>
                 <p class="card-text">
@@ -106,7 +106,6 @@
                     <li>A function without a return statement or with a return statement but without an expression
                         returns undefined.</li>
                 </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
     </section>
